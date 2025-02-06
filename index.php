@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title ?? "Document"; ?></title>
+    <title><?php echo $title ?? "Resort Reservation"; ?></title>
     <!-- css -->
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/output.css">
@@ -19,6 +19,7 @@
     <?php include 'src/php/parts/navbar.php' ?>
     <?php include 'src/php/home.php'?>
     <?php include 'src/php/services.php' ?>
+    <?php include 'src/php/rooms.php' ?>
     
 
 

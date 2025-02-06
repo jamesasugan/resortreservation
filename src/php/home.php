@@ -3,7 +3,7 @@ $title = "Home";
 ?> 
 
 
-    <div class="px-10 w-full h-screen bg-white mx-auto pt-10 flex justify-center items-center">
+    <div class="px-5 w-full h-screen bg-white mx-auto pt-10 flex justify-center items-center">
         <div class="swiper mySwiper w-full h-[90%] rounded-[2.5rem] max-w-[1800px]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide bg-[url('../img/bg.avif')] bg-cover h-full flex justify-center items-center">
