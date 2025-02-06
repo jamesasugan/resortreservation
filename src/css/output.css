@@ -3716,6 +3716,10 @@ details.collapse summary::-webkit-details-marker {
   max-width: 1800px;
 }
 
+.max-w-screen-lg {
+  max-width: 1024px;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -4455,6 +4459,11 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
