@@ -19,7 +19,7 @@ $title = "Home";
         <div class="absolute top-0 left-0 w-full h-full flex flex-col gap-2 justify-center m-auto text-white cursor-default px-20 sm:px-40 text-center md:text-start">
             <h1 class=" uppercase font-semibold z-10 text-lg sm:text-xl md:text-2xl lg:text-4xl">Elevate your Vacation</h1>
             <div class=" font-bold w-full md:w-1/2 z-10">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-wrap">Experience The Magic of Flight</h1>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-wrap">Experience The Best Stay of your Life</h1>
             </div>
             <div class="z-10 mt-10 md:mt-5 flex justify-center md:justify-start">
                 <button class="px-16 py-4 font-semibold transition duration-150 bg-white hover:bg-gray-300 text-black border-none rounded-[2.5rem] text-lg flex items-center justify-center">
