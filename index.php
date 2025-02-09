@@ -16,10 +16,11 @@
 </head>
 <body>
     
-    <?php include 'src/php/parts/navbar.php' ?>
-    <?php include 'src/php/home.php'?>
-    <?php include 'src/php/services.php' ?>
-    <?php include 'src/php/rooms.php' ?>
+    <?php include 'src/php/includes/navbar.php' ?>
+    <?php include 'src/php/sections/home.php'?>
+    <?php include 'src/php/sections/services.php' ?>
+    <?php include 'src/php/sections/rooms.php' ?>
+    <?php include 'src/php/sections/events.php' ?>
     
 
 

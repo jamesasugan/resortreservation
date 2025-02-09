@@ -49,12 +49,12 @@
 }
 </style>
 
-<section id="rooms" class="w-full min-h-screen bg-white text-black">
+<section id="rooms" class="w-full h-full bg-white text-black">
     <div class="max-w-[1800px] mx-auto px-5 sm:px-10">
         <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-center sm:text-left">Choose your rooms</h1>
 
         <!-- Swiper Container -->
-        <div class="relative mt-20 px-0 sm:px-5">
+        <div class="relative px-0 sm:px-5 py-10">
             <div class="swiper roomsSwiper">
                 <div class="swiper-wrapper">
                     <?php foreach($rooms as $room): ?>
@@ -92,10 +92,10 @@
             </div>
 
             <div class="flex sm:block justify-center gap-5 sm:absolute sm:top-1/2 sm:left-[-2rem] sm:right-[-2rem] md:left-[-2.5rem] md:right-[-2.5rem] sm:flex sm:justify-between mt-5">
-                <div class="swiper-room-prev text-4xl sm:text-5xl text-black cursor-pointer">
+                <div class="swiper-room-prev text-4xl sm:text-5xl text-yellow-500 cursor-pointer">
                     <ion-icon name="arrow-back-outline"></ion-icon>
                 </div>
-                <div class="swiper-room-next text-4xl sm:text-5xl text-black cursor-pointer">
+                <div class="swiper-room-next text-4xl sm:text-5xl text-yellow-500 cursor-pointer">
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
             </div>
@@ -107,7 +107,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".roomsSwiper", {
         slidesPerView: 1, // Change this for responsiveness
-        spaceBetween: 10,
+        spaceBetween: 30,
         loop: true, // Makes the slides loop
         navigation: {
             nextEl: ".swiper-room-next",
