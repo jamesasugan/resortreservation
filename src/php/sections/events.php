@@ -28,7 +28,7 @@
             'event_link' => '#',
             'event_img' => 'src/img/event1.jpg',
             'event_title' => 'The Grand Ballroom',
-            'event_description' => 'This is for event five description'
+            'event_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quia deserunt repellat aspernatur nesciunt dolore soluta, non veniam est saepe eveniet! Reiciendis et suscipit natus accusantium, commodi molestias deleniti cupiditate!'
         ]
     ]
 ?>
@@ -54,8 +54,8 @@
                             <!-- different overlay color for the main picture -->
                             <div class="absolute inset-0 gradient-overlay-main"></div>
                             <div class="absolute inset-x-0 bottom-0 p-5 text-white transition-all duration-500 group-hover:bottom-10">
-                                <h1 class="text-3xl font-semibold mb-2  transform translate-y-0 sm:translate-y-24 group-hover:translate-y-10 transition-all duration-500 group-hover:mb-4 text-center sm:text-start min-h-[3.5rem] flex items-center"><?= $event['event_title'] ?></h1>
-                                <p class="opacity-100 sm:opacity-0 transform translate-y-5 sm:translate-y-5 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 text-center sm:text-start min-h-[10rem] flex items-center">
+                                <h1 class="text-3xl font-semibold mb-5  transform translate-y-0 sm:translate-y-24 group-hover:translate-y-10 transition-all duration-500 group-hover:mb-10 text-center sm:text-start min-h-[3.5rem] flex items-center"><?= $event['event_title'] ?></h1>
+                                <p class="opacity-100 sm:opacity-0 transform translate-y-5 sm:translate-y-5 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 text-center sm:text-start min-h-[5rem] flex items-center w-full sm:w-3/4">
                                     <?= $event['event_description'] ?>
                                 </p>
                             </div>
