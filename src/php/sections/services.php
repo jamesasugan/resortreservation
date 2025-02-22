@@ -1,26 +1,6 @@
 <?php
-    $services = [
-        [
-            'icon' => 'fa-brands fa-telegram',
-            'title' => 'Airport Pickup',
-            'description' => 'We provide escort from the airport to the hotel'
-        ],
-        [
-            'icon' => 'fa-solid fa-book',
-            'title' => 'Easy Booking',
-            'description' => 'Quick and easy booking of tours for upcoming dates'
-        ],
-        [
-            'icon' => 'fa-solid fa-users',
-            'title' => 'Best tour guide',
-            'description' => 'Our best tour guide is ready to guide your trip'
-        ],
-        [
-            'icon' => 'fa-solid fa-tag',
-            'title' => 'Lots of promos',
-            'description' => 'Various promotions and drawings of tour'
-        ]
-    ]
+    include 'src/php/includes/data.php';
+    $services = $data['services'];
 ?>
 
 <section id="services" class="w-full bg-white py-24 text-black">

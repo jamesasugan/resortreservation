@@ -1,36 +1,6 @@
 <?php 
-    $events = [
-        [
-            'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
-            'event_title' => 'Fitness Room',
-            'event_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quia deserunt repellat aspernatur nesciunt dolore soluta, non veniam est saepe eveniet! Reiciendis et suscipit natus accusantium, commodi molestias deleniti cupiditate!'
-        ],
-        [
-            'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
-            'event_title' => 'Restaurant and Cafe',
-            'event_description' => 'This is for event two description'
-        ],
-        [
-            'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
-            'event_title' => 'Pool and Gardens',
-            'event_description' => 'This is for event three description'
-        ],
-        [
-            'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
-            'event_title' => 'Conference Areas',
-            'event_description' => 'This is for event four description'
-        ],
-        [
-            'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
-            'event_title' => 'The Grand Ballroom',
-            'event_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quia deserunt repellat aspernatur nesciunt dolore soluta, non veniam est saepe eveniet! Reiciendis et suscipit natus accusantium, commodi molestias deleniti cupiditate!'
-        ]
-    ]
+    include 'src/php/includes/data.php';
+    $events = $data['events'];
 ?>
 
 <section class="w-full bg-white text-black h-full py-24">

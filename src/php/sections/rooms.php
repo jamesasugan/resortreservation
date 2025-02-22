@@ -1,46 +1,6 @@
 <?php 
-    $rooms = [
-        [
-            'room_img' => 'https://wakayaislandresort.com/wp-content/uploads/2024/08/Bure-Ocean-View_1.jpg',
-            'room_type' => 'One Bedroom Suite',
-            'room_name' => 'Ocean View Bure',
-            'capacity' => 'Sleeps 2 Adults & 1 Child',
-            'bed_type' => '1 King Bed',
-            'bathroom' => '1 Bathroom',
-            'sqft' => '1, 650',
-            'price' => '2, 800'
-        ],
-        [
-            'room_img' => 'https://wakayaislandresort.com/wp-content/uploads/2023/08/Garden-View-Bure-Wakaya-Island-Resort-Spa-3-1.webp',
-            'room_type' => 'One Bedroom Suite',
-            'room_name' => 'Garden View Bure',
-            'capacity' => 'Sleeps 2 Adults & 1 Child',
-            'bed_type' => '1 King Bed',
-            'bathroom' => '1 Bathroom',
-            'sqft' => '1, 650',
-            'price' => '2, 500'
-        ],
-        [
-            'room_img' => 'https://wakayaislandresort.com/wp-content/uploads/2024/07/Seqa-Na-Leqa-Wakaya-Island-Resort-Spa-Private-Island-Resort-Fiji-5.webp',
-            'room_type' => 'Two bedroom villa w/ guest house',
-            'room_name' => 'Seqa Na Leqa',
-            'capacity' => 'Sleeps 4 Adults',
-            'bed_type' => '2 bedrooms & 2 king beds',
-            'bathroom' => '1 Bathroom',
-            'sqft' => '1, 650',
-            'price' => '2, 500'
-        ],
-        [
-            'room_img' => 'https://wakayaislandresort.com/wp-content/uploads/2024/07/Vale-Levu-Wakaya-Island-Resort-Spa-Private-Island-Resort-Fiji-4.webp',
-            'room_type' => 'Two bedroom suite with spa',
-            'room_name' => 'Vale Levu',
-            'capacity' => 'Sleeps 4 Adults & 2 Children',
-            'bed_type' => '2 bedrooms & 2 king beds',
-            'bathroom' => '2 Bathrooms',
-            'sqft' => '4, 500',
-            'price' => '5, 300'
-        ]
-    ]
+    include 'src/php/includes/data.php';
+    $rooms = $data['rooms'];
 ?>
 
 <style>
