@@ -3,10 +3,10 @@
     $services = $data['services'];
 ?>
 
-<section id="services" class="w-full bg-white py-24 text-black">
-    <div class="max-w-screen-2xl mx-auto px-5">
-        <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-center">Top Values for you</h1>
-        <p class="text-center text-base sm:text-xl my-5 px-10">Try variety of benefits when using our services</p>
+<section id="services" class="w-full bg-white mt-10 py-24 text-black">
+    <div class="w-full max-w-screen-2xl mx-auto px-5">
+        <h1 class="text-lg font-semibold text-center uppercase text-yellow-600">Private island and Spa </h1>
+        <p class="text-center text-[2.5rem] my-5 px-10 italictext text-[#50B5C1]">Island Paradise Awaits</p>
 
         <div id="services_section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-14 lg:gap-20 mt-10 px-10 py-10">
 
@@ -24,3 +24,11 @@
         </div>
     </div>
 </section>
+
+
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+     .italictext {
+         font-family: 'WindSong', cursive;
+     }
+</style>
