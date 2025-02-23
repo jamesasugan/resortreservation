@@ -3,24 +3,24 @@
 $data = [
     'services' =>[
         [
-            'icon' => 'fa-brands fa-telegram',
-            'title' => 'Airport Pickup',
-            'description' => 'We provide escort from the airport to the hotel'
+           'icon' => 'fa-solid fa-door-open',
+            'title' => 'Warm Welcome',
+            'description' => 'Experience a grand reception with complimentary drinks upon arrival.'
         ],
         [
-            'icon' => 'fa-solid fa-book',
-            'title' => 'Easy Booking',
-            'description' => 'Quick and easy booking of tours for upcoming dates'
+            'icon' => 'fa-solid fa-calendar-check',
+            'title' => 'Effortless Booking',
+            'description' => 'Plan your dream stay with just a few clicks.'
         ],
         [
-            'icon' => 'fa-solid fa-users',
-            'title' => 'Best tour guide',
-            'description' => 'Our best tour guide is ready to guide your trip'
+            'icon' => 'fa-solid fa-compass',
+            'title' => 'Guided Star Tours',
+            'description' => 'Explore hidden gems with our expert local guides.'
         ],
         [
-            'icon' => 'fa-solid fa-tag',
-            'title' => 'Lots of promos',
-            'description' => 'Various promotions and drawings of tour'
+            'icon' => 'fa-solid fa-gift',
+            'title' => 'Exclusive Offers',
+            'description' => 'Unlock special deals and seasonal resort promotions.'
         ]
     ],
     'rooms' => [

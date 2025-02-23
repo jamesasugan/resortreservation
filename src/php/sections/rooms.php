@@ -11,7 +11,8 @@
 
 <section id="rooms" class="w-full h-full bg-white text-black">
     <div class="max-w-[1800px] mx-auto px-5 sm:px-10">
-        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-center sm:text-left">Choose your rooms</h1>
+        <p class="text-[1.5rem] uppercase">Explore</p>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold text-center sm:text-left uppercase">Our Rooms</h1>
 
         <!-- Swiper Container -->
         <div class="relative px-0 sm:px-5 py-10">
@@ -66,9 +67,13 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".roomsSwiper", {
-        slidesPerView: 1, // Change this for responsiveness
-        spaceBetween: 30,
-        loop: true, // Makes the slides loop
+        slidesPerView: 1, 
+        spaceBetween: 20,
+        loop: true, 
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".swiper-room-next",
             prevEl: ".swiper-room-prev",
