@@ -68,31 +68,31 @@ $data = [
     'events' => [
         [
             'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
+            'event_img' => 'src/img/event1.avif',
             'event_title' => 'Fitness Room',
             'event_description' => 'Stay active and energized with access to a fully equipped fitness room. Whether you\'re looking for a quick workout or a full training session, our space offers everything you need to maintain your fitness goals.'
         ],
         [
             'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
+            'event_img' => 'src/img/event2.avif',
             'event_title' => 'Restaurant and Cafe',
             'event_description' => 'Indulge in a world-class dining experience at our partner restaurants and cafés. Savor exquisite international and local cuisine in a cozy, stylish ambiance—perfect for intimate gatherings or casual meetups.'
         ],
         [
             'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
+            'event_img' => 'src/img/event3.jpg',
             'event_title' => 'Wellness and Spa Retreats',
             'event_description' => 'Rejuvenate your mind and body with a refreshing spa day or wellness retreat. Pamper yourself with soothing massages, revitalizing treatments, and a serene atmosphere.'
         ],
         [
             'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
+            'event_img' => 'src/img/event4.avif',
             'event_title' => 'Car Rentals for Every Journey',
             'event_description' => 'Travel in style and convenience with our premium car rental services. Choose from a selection of well-maintained vehicles, ideal for business trips, vacations, or special occasions.'
         ],
         [
             'event_link' => '#',
-            'event_img' => 'src/img/event1.jpg',
+            'event_img' => 'src/img/event5.avif',
             'event_title' => 'Exclusive Event Venues',
             'event_description' => 'From elegant ballrooms to scenic outdoor spaces, our venues set the stage for unforgettable celebrations. Whether it’s a wedding, corporate event, or private party, we provide the perfect backdrop for your special moments.'
         ]
