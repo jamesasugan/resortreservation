@@ -2,12 +2,19 @@
 module.exports = {
   content: [
     './index.php',
-    './src/**/*.{html,js,php}', // Include all HTML, JS, and PHP files in src
+    './src/**/*.{html,js,php}', 
   ],
   theme: {
-    extend: {},
+   extend: {
+      colors: {
+        scrollbar: {
+          track: 'transparent', 
+          thumb: '#c0c0c0', 
+        }
+      }
+    }
   },
   plugins: [
-    require('daisyui'), // DaisyUI plugin
+    require('daisyui'), 
   ],
 };
