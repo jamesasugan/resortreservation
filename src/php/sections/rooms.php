@@ -44,7 +44,7 @@
                                     </p>
                                 </div>
                                 <p class="font-semibold text-base sm:text-lg my-5">Starting at ₱<?= $room['price'] ?> per night</p>
-                                <a href="#" class="btn uppercase w-full rounded-none bg-yellow-500 text-white border-none hover:bg-yellow-600 hover:shadow-lg">View Suite</a>
+                                <a href="src/php/parts/room_info.php?room=suite" class="btn uppercase w-full rounded-none bg-yellow-500 text-white border-none hover:bg-yellow-600 hover:shadow-lg">View Suite</a>
                             </div>
                         </div>
                     </div>
@@ -62,6 +62,7 @@
             </div>
         </div>
     </div>
+    <div id="roomInfoContainer"></div> 
 </section>
 
 <script>
