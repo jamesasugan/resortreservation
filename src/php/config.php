@@ -1,5 +1,5 @@
 <?php
 
-define('BASE_URL', '/resortreservation'); // Adjust based on deployment
+define('BASE_URL', '/resortreservation/src/'); // Adjust based on deployment
 
 ?>
