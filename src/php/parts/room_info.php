@@ -33,27 +33,33 @@ $roomDescription = $roomDetails[$room]['description'];
     <title><?php echo $roomTitle; ?> - Resort Reservation</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/style.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/output.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>src/css/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>src/css/output.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>src/css/swiper/swiper-bundle.min.css"/>
 
     <script src="https://kit.fontawesome.com/70df29d299.js" crossorigin="anonymous"></script>
-    <script defer src="<?php echo BASE_URL; ?>jquery/dist/jquery.min.js"></script>
-    <script src="<?php echo BASE_URL; ?>js/swiper/swiper-bundle.min.js"></script>
+    <script defer src="<?php echo BASE_URL; ?>src/jquery/dist/jquery.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>src/js/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     
     <?php include '../includes/navbar.php'; ?> 
     
-    <section id="room-info" class="w-full h-full bg-white mt-20">
-        <div class="w-full h-full max-w-[1800px] mx-auto px-5 sm:px-10 py-10">
-            <h2 class="text-xl font-bold"><?php echo $roomTitle; ?></h2>
+    <section id="room-info" class="relative w-full min-h-screen bg-gray-500 pt-[23rem]">
+        <img src="../../img/event1.avif" alt="" class="absolute w-full h-[23rem] object-cover top-0 left-0 z-0"/>
+
+        <div class="relative w-full max-w-[1800px] mx-auto px-5 sm:px-10 py-10">
+            <h2 class="text-xl font-bold text-green-500"><?php echo $roomTitle; ?></h2>
             <p><?php echo $roomDescription; ?></p>
-            <a href="<?php echo $_SERVER['HTTP_REFERER'] ?? BASE_URL . '../index.php'; ?>" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Go Back</a>
+            <a href="<?php echo BASE_URL; ?>#rooms" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">
+                Go Back
+            </a>
         </div>
     </section>
 
-    <script src="<?php echo BASE_URL; ?>js/script.js"></script>
+
+
+    <script src="<?php echo BASE_URL; ?>src/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

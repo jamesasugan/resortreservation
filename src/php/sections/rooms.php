@@ -9,7 +9,7 @@
 }
 </style>
 
-<section id="rooms" class="w-full h-full bg-white text-black">
+<section id="rooms" class="w-full h-full bg-white text-black pt-28">
     <div class="max-w-[1800px] mx-auto px-5 sm:px-10">
         <p class="text-[1.5rem] uppercase">Explore</p>
         <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold text-left uppercase">Our Rooms</h1>

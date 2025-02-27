@@ -3,7 +3,7 @@
     $events = $data['events'];
 ?>
 
-<section class="w-full bg-white text-black h-full py-24">
+<section id="events" class="w-full bg-white text-black h-full pt-28">
     <div class="w-full max-w-[1800px] mx-auto px-5 sm:px-10">
         <p class="text-[1.5rem] uppercase text-end px-5">Discover</p>
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-end px-5 uppercase">Our Events</h1>

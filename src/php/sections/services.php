@@ -4,7 +4,7 @@
 ?>
 
 <section id="services" class="w-full bg-white py-20 text-black">
-    <div class="w-full max-w-screen-2xl mx-auto px-5">
+    <div class="w-full max-w-screen-2xl mx-auto px-5 mt-14">
         <h1 class="text-lg font-semibold text-center uppercase text-yellow-600">Private island and Spa </h1>
         <p class="text-center text-[2.5rem] my-5 px-10 italictext text-[#50B5C1]">Your Starry Escape Awaits</p>
 

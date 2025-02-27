@@ -1,22 +1,22 @@
 <nav class="z-50 fixed w-full top-0 start-0 nav-transition">
   <div class="flex flex-wrap items-center justify-center sm:justify-between mx-auto p-4 w-full max-w-[1920px]">
     <div class="flex items-center flex-col sm:flex-row gap-2 sm:gap-10 justify-center">
-      <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="src/img/logo2.png" class="h-14" alt="Logo">
+      <a href="<?php echo BASE_URL; ?>" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="<?php echo BASE_URL; ?>src/img/logo2.png" class="h-14" alt="Logo">
         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Resort</span> -->
       </a>
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium text-white rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 uppercase text-center">
           <li>
-            <a href="#" class="block py-2 px-3 rounded md:p-0 hover:text-gray-300 transition duration-200">Home</a>
+            <a href="<?php echo BASE_URL; ?>#home" class="block py-2 px-3 rounded md:p-0 hover:text-gray-300 transition duration-200">Home</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 rounded md:p-0 hover:text-gray-300 transition duration-200">About</a>
+            <a href="<?php echo BASE_URL; ?>#services" class="block py-2 px-3 rounded md:p-0 hover:text-gray-300 transition duration-200">Services</a>
           </li>
           <li>
-            <a href="#services" class="block py-2 px-3 rounded md:p-0 hover:text-gray-300 transition duration-200">Services</a>
+            <a href="<?php echo BASE_URL; ?>#rooms" class="block py-2 px-3 rounded md:p-0 hover:text-gray-300 transition duration-200">Rooms</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 rounded md:p-0 hover:text-gray-300 transition duration-200">Contact</a>
+            <a href="<?php echo BASE_URL; ?>#events" class="block py-2 px-3 rounded md:p-0 hover:text-gray-300 transition duration-200">Events</a>
           </li>
       </ul>
     </div>
