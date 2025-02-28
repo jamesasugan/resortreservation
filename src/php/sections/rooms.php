@@ -62,7 +62,6 @@
             </div>
         </div>
     </div>
-    <div id="roomInfoContainer"></div> 
 </section>
 
 <script>

@@ -96,6 +96,16 @@ $data = [
             'event_title' => 'Exclusive Event Venues',
             'event_description' => 'From elegant ballrooms to scenic outdoor spaces, our venues set the stage for unforgettable celebrations. Whether it’s a wedding, corporate event, or private party, we provide the perfect backdrop for your special moments.'
         ]
+    ],
+    'roomDetails' => [
+        "suite" => [
+            "title" => "Suite Room",
+            "description" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas ipsam quasi dignissimos. Officiis quas illo blanditiis delectus quaerat. Esse ducimus eos sapiente distinctio error, incidunt repellendus quidem perferendis exercitationem."
+        ],
+        "deluxe" => [
+            "title" => "Deluxe Room",
+            "description" => "A cozy deluxe room with a scenic view."
+        ],
     ]
 
 ]
