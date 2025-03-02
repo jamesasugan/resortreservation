@@ -28,41 +28,137 @@ $data = [
             'room_img' => 'https://wakayaislandresort.com/wp-content/uploads/2024/08/Bure-Ocean-View_1.jpg',
             'room_type' => 'One Bedroom Suite',
             'room_name' => 'Ocean View Bure',
+            "description" => "A luxurious suite offering breathtaking ocean views, elegant furnishings, and top-notch amenities for a relaxing stay.",
+            "images_slider" => [
+                ''
+            ],
+            "amenities" => [
+                "Air Conditioning",
+                "King size bed",
+                "Luxury linens",
+                "Open-air bathroom"
+            ],
+            "features" => [
+                "Ocean View",
+                "Short walk to swimming pool",
+                "Private Balcony",
+                "Cathedral ceilings"
+            ],
+            "included_stay" => [
+                "Free Breakfast",
+                "Free Parking",
+                "Free Wi-Fi",
+                "Free Access to Pool",
+                "Free Access to Gym",
+                "Free Access to Spa"
+            ],
             'capacity' => 'Sleeps 2 Adults & 1 Child',
             'bed_type' => '1 King Bed',
             'bathroom' => '1 Bathroom',
-            'sqft' => '1, 650',
-            'price' => '2, 800'
+            'sqft' => '1650',
+            'price' => '2800'
         ],
         [
             'room_img' => 'https://wakayaislandresort.com/wp-content/uploads/2023/08/Garden-View-Bure-Wakaya-Island-Resort-Spa-3-1.webp',
             'room_type' => 'One Bedroom Suite',
             'room_name' => 'Garden View Bure',
+            "description" => "A spacious one-bedroom suite with a private balcony overlooking the ocean, perfect for a serene and tranquil getaway.",
+            "images_slider" => [
+                ''
+            ],
+            "amenities" => [
+                "King size bed",
+                "Luxury linens",
+                "Private balcony",
+                "Spacious living area"
+            ],
+            "features" => [
+                "Panoramic ocean views",
+                "Short walk to the beach",
+                "Outdoor lounge area",
+                "High ceilings for ventilation"
+            ],
+            "included_stay" => [
+                "Complimentary breakfast",
+                "Private beach access",
+                "Daily housekeeping",
+                "Welcome drinks"
+            ],
             'capacity' => 'Sleeps 2 Adults & 1 Child',
             'bed_type' => '1 King Bed',
             'bathroom' => '1 Bathroom',
-            'sqft' => '1, 650',
-            'price' => '2, 500'
+            'sqft' => '1650',
+            'price' => '2500'
         ],
         [
             'room_img' => 'https://wakayaislandresort.com/wp-content/uploads/2024/07/Seqa-Na-Leqa-Wakaya-Island-Resort-Spa-Private-Island-Resort-Fiji-5.webp',
             'room_type' => 'Two bedroom villa w/ guest house',
             'room_name' => 'Seqa Na Leqa',
+            "description" => "Surrounded by lush tropical gardens, this room offers a peaceful retreat with modern comforts.",
+            "images_slider" => [
+                ''
+            ],
+            "amenities" => [
+                "King size bed",
+                "Outdoor patio",
+                "Luxury linens",
+                "En-suite bathroom"
+            ],
+            "features" => [
+                "Garden views",
+                "Private terrace",
+                "Relaxing outdoor seating",
+                "Close to nature trails"
+            ],
+            "included_stay" => [
+                "Daily breakfast",
+                "Wi-Fi access",
+                "Housekeeping service",
+                "Welcome drink"
+            ],
+            "hotel_amenities" => [
+                "Swimming pool",
+                "24-hour concierge",
+                "On-site restaurant",
+                "Yoga classes"
+            ],
             'capacity' => 'Sleeps 4 Adults',
             'bed_type' => '2 bedrooms & 2 king beds',
             'bathroom' => '1 Bathroom',
-            'sqft' => '1, 650',
-            'price' => '2, 500'
+            'sqft' => '1650',
+            'price' => '2500'
         ],
         [
             'room_img' => 'https://wakayaislandresort.com/wp-content/uploads/2024/07/Vale-Levu-Wakaya-Island-Resort-Spa-Private-Island-Resort-Fiji-4.webp',
             'room_type' => 'Two bedroom suite with spa',
             'room_name' => 'Vale Levu',
+            "description" => "An exclusive two-bedroom villa featuring a guest house, ideal for families or groups seeking privacy and comfort.",
+            "images_slider" => [
+                ''
+            ],
+            "amenities" => [
+                "Two king beds",
+                "Private swimming pool",
+                "Outdoor shower",
+                "Fully equipped kitchen"
+            ],
+            "features" => [
+                "Oceanfront location",
+                "Private butler service",
+                "Spacious outdoor lounge",
+                "Direct beach access"
+            ],
+            "included_stay" => [
+                "Personalized concierge service",
+                "Complimentary airport transfers",
+                "Private chef (on request)",
+                "Unlimited beach activities"
+            ],
             'capacity' => 'Sleeps 4 Adults & 2 Children',
             'bed_type' => '2 bedrooms & 2 king beds',
             'bathroom' => '2 Bathrooms',
-            'sqft' => '4, 500',
-            'price' => '5, 300'
+            'sqft' => '4500',
+            'price' => '5300'
         ]
     ],
     'events' => [
@@ -96,18 +192,7 @@ $data = [
             'event_title' => 'Exclusive Event Venues',
             'event_description' => 'From elegant ballrooms to scenic outdoor spaces, our venues set the stage for unforgettable celebrations. Whether it’s a wedding, corporate event, or private party, we provide the perfect backdrop for your special moments.'
         ]
-    ],
-    'roomDetails' => [
-        "suite" => [
-            "title" => "Suite Room",
-            "description" => "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas ipsam quasi dignissimos. Officiis quas illo blanditiis delectus quaerat. Esse ducimus eos sapiente distinctio error, incidunt repellendus quidem perferendis exercitationem."
-        ],
-        "deluxe" => [
-            "title" => "Deluxe Room",
-            "description" => "A cozy deluxe room with a scenic view."
-        ],
     ]
-
 ]
 
 ?>
