@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?? "Resort Reservation"; ?></title>
+    <link rel="icon" type="image/x-icon" href="src/img/logo2.png">
     <!-- css -->
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/output.css">
