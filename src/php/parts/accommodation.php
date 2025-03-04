@@ -121,12 +121,19 @@ $roomDetailKey = strtolower(str_replace(' ', '_', $roomData['room_type'] ?? ''))
                     </ul>
                 </div>
             </div>
+            <hr class="mt-10 border-t-1 border-black max-w-[1400px] mx-auto"/>
+            <div class="flex flex-col mt-10">
+                <h1 class="text-center text-2xl">Ready to Book?</h1>
+                
+                <?php include 'datepicker.php' ?>                
+            </div>
         </div>
     </section>
 
 
 
     <script src="<?php echo BASE_URL; ?>src/js/script.js"></script> 
+    <script src="<?php echo BASE_URL; ?>src/js/datepicker.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
