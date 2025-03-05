@@ -1,168 +1,216 @@
-
-<section class="bg-white py-20 dark:bg-dark text-black">
-  <div class="container">
-    <div class="mx-auto max-w-[380px]">
-      <div class="relative mb-3">
-        <input
-          id="datepicker"
-          type="text"
-          placeholder="Pick a date"
-          class="h-12 w-full appearance-none rounded-lg border border-stroke bg-white pl-12 pr-4 text-dark outline-none focus:border-primary dark:border-dark-3 dark:bg-dark-2 dark:text-white"
-        />
-        <span
-          id="toggleDatepicker"
-          class="absolute inset-y-0 flex h-12 w-12 items-center justify-center text-dark-5"
-        >
-          <svg
-            width="21"
-            height="20"
-            viewBox="0 0 21 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+<!-- ====== Date range picker Section Start -->
+<section class="bg-white py-20 min-h-full">
+  <div class="container mx-auto">
+    <div class="-mx-4 flex flex-wrap justify-center">
+      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+        <div class="mb-12">
+          <label
+            for=""
+            class="mb-[10px] block text-base font-medium text-dark "
           >
-            <path
-              d="M18 3.3125H16.3125V2.625C16.3125 2.25 16 1.90625 15.5937 1.90625C15.1875 1.90625 14.875 2.21875 14.875 2.625V3.28125H6.09375V2.625C6.09375 2.25 5.78125 1.90625 5.375 1.90625C4.96875 1.90625 4.65625 2.21875 4.65625 2.625V3.28125H3C1.9375 3.28125 1.03125 4.15625 1.03125 5.25V16.125C1.03125 17.1875 1.90625 18.0938 3 18.0938H18C19.0625 18.0938 19.9687 17.2187 19.9687 16.125V5.25C19.9687 4.1875 19.0625 3.3125 18 3.3125ZM3 4.71875H4.6875V5.34375C4.6875 5.71875 5 6.0625 5.40625 6.0625C5.8125 6.0625 6.125 5.75 6.125 5.34375V4.71875H14.9687V5.34375C14.9687 5.71875 15.2812 6.0625 15.6875 6.0625C16.0937 6.0625 16.4062 5.75 16.4062 5.34375V4.71875H18C18.3125 4.71875 18.5625 4.96875 18.5625 5.28125V7.34375H2.46875V5.28125C2.46875 4.9375 2.6875 4.71875 3 4.71875ZM18 16.6562H3C2.6875 16.6562 2.4375 16.4062 2.4375 16.0937V8.71875H18.5312V16.125C18.5625 16.4375 18.3125 16.6562 18 16.6562Z"
-              fill="currentColor"
-            />
-            <path
-              d="M9.5 9.59375H8.8125C8.625 9.59375 8.5 9.71875 8.5 9.90625V10.5938C8.5 10.7812 8.625 10.9062 8.8125 10.9062H9.5C9.6875 10.9062 9.8125 10.7812 9.8125 10.5938V9.90625C9.8125 9.71875 9.65625 9.59375 9.5 9.59375Z"
-              fill="currentColor"
-            />
-            <path
-              d="M12.3438 9.59375H11.6562C11.4687 9.59375 11.3438 9.71875 11.3438 9.90625V10.5938C11.3438 10.7812 11.4687 10.9062 11.6562 10.9062H12.3438C12.5312 10.9062 12.6562 10.7812 12.6562 10.5938V9.90625C12.6562 9.71875 12.5312 9.59375 12.3438 9.59375Z"
-              fill="currentColor"
-            />
-            <path
-              d="M15.1875 9.59375H14.5C14.3125 9.59375 14.1875 9.71875 14.1875 9.90625V10.5938C14.1875 10.7812 14.3125 10.9062 14.5 10.9062H15.1875C15.375 10.9062 15.5 10.7812 15.5 10.5938V9.90625C15.5 9.71875 15.375 9.59375 15.1875 9.59375Z"
-              fill="currentColor"
-            />
-            <path
-              d="M6.5 12H5.8125C5.625 12 5.5 12.125 5.5 12.3125V13C5.5 13.1875 5.625 13.3125 5.8125 13.3125H6.5C6.6875 13.3125 6.8125 13.1875 6.8125 13V12.3125C6.8125 12.125 6.65625 12 6.5 12Z"
-              fill="currentColor"
-            />
-            <path
-              d="M9.5 12H8.8125C8.625 12 8.5 12.125 8.5 12.3125V13C8.5 13.1875 8.625 13.3125 8.8125 13.3125H9.5C9.6875 13.3125 9.8125 13.1875 9.8125 13V12.3125C9.8125 12.125 9.65625 12 9.5 12Z"
-              fill="currentColor"
-            />
-            <path
-              d="M12.3438 12H11.6562C11.4687 12 11.3438 12.125 11.3438 12.3125V13C11.3438 13.1875 11.4687 13.3125 11.6562 13.3125H12.3438C12.5312 13.3125 12.6562 13.1875 12.6562 13V12.3125C12.6562 12.125 12.5312 12 12.3438 12Z"
-              fill="currentColor"
-            />
-            <path
-              d="M15.1875 12H14.5C14.3125 12 14.1875 12.125 14.1875 12.3125V13C14.1875 13.1875 14.3125 13.3125 14.5 13.3125H15.1875C15.375 13.3125 15.5 13.1875 15.5 13V12.3125C15.5 12.125 15.375 12 15.1875 12Z"
-              fill="currentColor"
-            />
-            <path
-              d="M6.5 14.4062H5.8125C5.625 14.4062 5.5 14.5312 5.5 14.7187V15.4062C5.5 15.5938 5.625 15.7188 5.8125 15.7188H6.5C6.6875 15.7188 6.8125 15.5938 6.8125 15.4062V14.7187C6.8125 14.5312 6.65625 14.4062 6.5 14.4062Z"
-              fill="currentColor"
-            />
-            <path
-              d="M9.5 14.4062H8.8125C8.625 14.4062 8.5 14.5312 8.5 14.7187V15.4062C8.5 15.5938 8.625 15.7188 8.8125 15.7188H9.5C9.6875 15.7188 9.8125 15.5938 9.8125 15.4062V14.7187C9.8125 14.5312 9.65625 14.4062 9.5 14.4062Z"
-              fill="currentColor"
-            />
-            <path
-              d="M12.3438 14.4062H11.6562C11.4687 14.4062 11.3438 14.5312 11.3438 14.7187V15.4062C11.3438 15.5938 11.4687 15.7188 11.6562 15.7188H12.3438C12.5312 15.7188 12.6562 15.5938 12.6562 15.4062V14.7187C12.6562 14.5312 12.5312 14.4062 12.3438 14.4062Z"
-              fill="currentColor"
-            />
-          </svg>
-        </span>
-      </div>
-      <div
-        id="datepicker-container"
-        class="w-full flex-col rounded-lg border border-stroke bg-white px-4 py-6 shadow-xs sm:px-6 sm:py-[30px] dark:border-dark-3 dark:bg-dark-2 hidden"
-      >
-        <div class="flex items-center justify-between pb-2">
-          <p id="currentMonth" class="text-base font-medium text-dark dark:text-white">
-            
-          </p>
-          <div class="flex items-center justify-end space-x-[10px]">
-            <span
-              id="prevMonth"
-              class="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded border-[.5px] border-stroke bg-gray-2 text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:bg-dark dark:text-white"
-            >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="fill-current"
+            Date range picker
+          </label>
+
+          <div class="relative">
+            <!-- Datepicker Input with Icons -->
+            <div class="relative flex items-center">
+              <span class="absolute left-0 pl-5 text-dark-5">
+                <!-- Calendar Icon -->
+                <svg
+                  class="fill-current"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3.3125H15.8125V2.625C15.8125 2.25 15.5 1.90625 15.0937 1.90625C14.6875 1.90625 14.375 2.21875 14.375 2.625V3.28125H5.59375V2.625C5.59375 2.25 5.28125 1.90625 4.875 1.90625C4.46875 1.90625 4.15625 2.21875 4.15625 2.625V3.28125H2.5C1.4375 3.28125 0.53125 4.15625 0.53125 5.25V16.125C0.53125 17.1875 1.40625 18.0937 2.5 18.0937H17.5C18.5625 18.0937 19.4687 17.2187 19.4687 16.125V5.25C19.4687 4.1875 18.5625 3.3125 17.5 3.3125ZM2.5 4.71875H4.1875V5.34375C4.1875 5.71875 4.5 6.0625 4.90625 6.0625C5.3125 6.0625 5.625 5.75 5.625 5.34375V4.71875H14.4687V5.34375C14.4687 5.71875 14.7812 6.0625 15.1875 6.0625C15.5937 6.0625 15.9062 5.75 15.9062 5.34375V4.71875H17.5C17.8125 4.71875 18.0625 4.96875 18.0625 5.28125V7.34375H1.96875V5.28125C1.96875 4.9375 2.1875 4.71875 2.5 4.71875ZM17.5 16.6562H2.5C2.1875 16.6562 1.9375 16.4062 1.9375 16.0937V8.71875H18.0312V16.125C18.0625 16.4375 17.8125 16.6562 17.5 16.6562Z"
+                    fill=""
+                  />
+                  <path
+                    d="M9 9.59375H8.3125C8.125 9.59375 8 9.71875 8 9.90625V10.5938C8 10.7813 8.125 10.9062 8.3125 10.9062H9C9.1875 10.9062 9.3125 10.7813 9.3125 10.5938V9.90625C9.3125 9.71875 9.15625 9.59375 9 9.59375Z"
+                    fill=""
+                  />
+                  <path
+                    d="M11.8438 9.59375H11.1562C10.9687 9.59375 10.8438 9.71875 10.8438 9.90625V10.5938C10.8438 10.7813 10.9687 10.9062 11.1562 10.9062H11.8438C12.0313 10.9062 12.1562 10.7813 12.1562 10.5938V9.90625C12.1562 9.71875 12.0313 9.59375 11.8438 9.59375Z"
+                    fill=""
+                  />
+                  <path
+                    d="M14.6875 9.59375H14C13.8125 9.59375 13.6875 9.71875 13.6875 9.90625V10.5938C13.6875 10.7813 13.8125 10.9062 14 10.9062H14.6875C14.875 10.9062 15 10.7813 15 10.5938V9.90625C15 9.71875 14.875 9.59375 14.6875 9.59375Z"
+                    fill=""
+                  />
+                  <path
+                    d="M6 12H5.3125C5.125 12 5 12.125 5 12.3125V13C5 13.1875 5.125 13.3125 5.3125 13.3125H6C6.1875 13.3125 6.3125 13.1875 6.3125 13V12.3125C6.3125 12.125 6.15625 12 6 12Z"
+                    fill=""
+                  />
+                  <path
+                    d="M9 12H8.3125C8.125 12 8 12.125 8 12.3125V13C8 13.1875 8.125 13.3125 8.3125 13.3125H9C9.1875 13.3125 9.3125 13.1875 9.3125 13V12.3125C9.3125 12.125 9.15625 12 9 12Z"
+                    fill=""
+                  />
+                  <path
+                    d="M11.8438 12H11.1562C10.9687 12 10.8438 12.125 10.8438 12.3125V13C10.8438 13.1875 10.9687 13.3125 11.1562 13.3125H11.8438C12.0313 13.3125 12.1562 13.1875 12.1562 13V12.3125C12.1562 12.125 12.0313 12 11.8438 12Z"
+                    fill=""
+                  />
+                  <path
+                    d="M14.6875 12H14C13.8125 12 13.6875 12.125 13.6875 12.3125V13C13.6875 13.1875 13.8125 13.3125 14 13.3125H14.6875C14.875 13.3125 15 13.1875 15 13V12.3125C15 12.125 14.875 12 14.6875 12Z"
+                    fill=""
+                  />
+                  <path
+                    d="M6 14.4062H5.3125C5.125 14.4062 5 14.5312 5 14.7187V15.4063C5 15.5938 5.125 15.7187 5.3125 15.7187H6C6.1875 15.7187 6.3125 15.5938 6.3125 15.4063V14.7187C6.3125 14.5312 6.15625 14.4062 6 14.4062Z"
+                    fill=""
+                  />
+                  <path
+                    d="M9 14.4062H8.3125C8.125 14.4062 8 14.5312 8 14.7187V15.4063C8 15.5938 8.125 15.7187 8.3125 15.7187H9C9.1875 15.7187 9.3125 15.5938 9.3125 15.4063V14.7187C9.3125 14.5312 9.15625 14.4062 9 14.4062Z"
+                    fill=""
+                  />
+                  <path
+                    d="M11.8438 14.4062H11.1562C10.9687 14.4062 10.8438 14.5312 10.8438 14.7187V15.4063C10.8438 15.5938 10.9687 15.7187 11.1562 15.7187H11.8438C12.0313 15.7187 12.1562 15.5938 12.1562 15.4063V14.7187C12.1562 14.5312 12.0313 14.4062 11.8438 14.4062Z"
+                    fill=""
+                  />
+                </svg>
+              </span>
+
+              <input
+                id="datepicker"
+                type="text"
+                class="w-full rounded-lg border border-stroke bg-transparent py-2.5 pl-[50px] pr-8 text-dark-2 outline-none transition focus:border-primary "
+                placeholder="Select a date"
+                readonly
+              />
+              <span
+                class="absolute right-0 cursor-pointer pr-4 text-dark-5"
+                id="toggleDatepicker"
               >
-                <path
-                  d="M10.825 14.325C10.675 14.325 10.525 14.275 10.425 14.15L4.77501 8.40002C4.55001 8.17502 4.55001 7.82502 4.77501 7.60002L10.425 1.85002C10.65 1.62502 11 1.62502 11.225 1.85002C11.45 2.07502 11.45 2.42502 11.225 2.65002L5.97501 8.00003L11.25 13.35C11.475 13.575 11.475 13.925 11.25 14.15C11.1 14.25 10.975 14.325 10.825 14.325Z"
-                />
-              </svg>
-            </span>
-            <span
-              id="nextMonth"
-              class="flex h-[30px] w-[30px] cursor-pointer items-center justify-center rounded border-[.5px] border-stroke bg-gray-2 text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:bg-dark dark:text-white"
+                <!-- Arrow Down Icon -->
+                <svg
+                  class="fill-current stroke-current"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.29635 5.15354L2.29632 5.15357L2.30055 5.1577L7.65055 10.3827L8.00157 10.7255L8.35095 10.381L13.701 5.10603L13.701 5.10604L13.7035 5.10354C13.722 5.08499 13.7385 5.08124 13.7499 5.08124C13.7613 5.08124 13.7778 5.08499 13.7963 5.10354C13.8149 5.12209 13.8187 5.13859 13.8187 5.14999C13.8187 5.1612 13.815 5.17734 13.7973 5.19552L8.04946 10.8433L8.04945 10.8433L8.04635 10.8464C8.01594 10.8768 7.99586 10.8921 7.98509 10.8992C7.97746 10.8983 7.97257 10.8968 7.96852 10.8952C7.96226 10.8929 7.94944 10.887 7.92872 10.8721L2.20253 5.2455C2.18478 5.22733 2.18115 5.2112 2.18115 5.19999C2.18115 5.18859 2.18491 5.17209 2.20346 5.15354C2.222 5.13499 2.2385 5.13124 2.2499 5.13124C2.2613 5.13124 2.2778 5.13499 2.29635 5.15354Z"
+                    fill=""
+                    stroke=""
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <!-- Datepicker Container -->
+            <div
+              id="datepicker-container"
+              class="shadow-datepicker absolute mt-2 hidden rounded-xl border border-stroke bg-white pt-5 "
             >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="fill-current"
+              <div class="flex items-center justify-between px-5">
+                <button
+                  id="prevMonth"
+                  class="rounded-md px-2 py-2 text-dark hover:bg-gray-2 "
+                >
+                  <svg
+                    class="fill-current"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.5312 17.9062C13.3437 17.9062 13.1562 17.8438 13.0312 17.6875L5.96875 10.5C5.6875 10.2187 5.6875 9.78125 5.96875 9.5L13.0312 2.3125C13.3125 2.03125 13.75 2.03125 14.0312 2.3125C14.3125 2.59375 14.3125 3.03125 14.0312 3.3125L7.46875 10L14.0625 16.6875C14.3438 16.9688 14.3438 17.4062 14.0625 17.6875C13.875 17.8125 13.7187 17.9062 13.5312 17.9062Z"
+                      fill=""
+                    />
+                  </svg>
+                </button>
+                <div
+                  id="currentMonth"
+                  class="text-lg font-medium text-dark-3 "
+                ></div>
+                <button
+                  id="nextMonth"
+                  class="rounded-md px-2 py-2 text-dark hover:bg-gray-2 "
+                >
+                  <svg
+                    class="fill-current"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.46875 17.9063C6.28125 17.9063 6.125 17.8438 5.96875 17.7188C5.6875 17.4375 5.6875 17 5.96875 16.7188L12.5312 10L5.96875 3.3125C5.6875 3.03125 5.6875 2.59375 5.96875 2.3125C6.25 2.03125 6.6875 2.03125 6.96875 2.3125L14.0313 9.5C14.3125 9.78125 14.3125 10.2187 14.0313 10.5L6.96875 17.6875C6.84375 17.8125 6.65625 17.9063 6.46875 17.9063Z"
+                      fill=""
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="mb-4 mt-6 grid grid-cols-7 px-5">
+                <div
+                  class="text-center text-sm font-medium text-secondary-color"
+                >
+                  Sun
+                </div>
+                <div
+                  class="text-center text-sm font-medium text-secondary-color"
+                >
+                  Mon
+                </div>
+                <div
+                  class="text-center text-sm font-medium text-secondary-color"
+                >
+                  Tue
+                </div>
+                <div
+                  class="text-center text-sm font-medium text-secondary-color"
+                >
+                  Wed
+                </div>
+                <div
+                  class="text-center text-sm font-medium text-secondary-color"
+                >
+                  Thu
+                </div>
+                <div
+                  class="text-center text-sm font-medium text-secondary-color"
+                >
+                  Fri
+                </div>
+                <div
+                  class="text-center text-sm font-medium text-secondary-color"
+                >
+                  Sat
+                </div>
+              </div>
+              <div
+                id="days-container"
+                class="mt-2 grid grid-cols-7 gap-y-0.5 px-5"
+              ></div>
+              <!-- Buttons -->
+              <div
+                class="mt-5 flex justify-end space-x-2.5 border-t border-stroke p-5 "
               >
-                <path
-                  d="M5.17501 14.325C5.02501 14.325 4.90001 14.275 4.77501 14.175C4.55001 13.95 4.55001 13.6 4.77501 13.375L10.025 8.00003L4.77501 2.65002C4.55001 2.42502 4.55001 2.07502 4.77501 1.85002C5.00001 1.62502 5.35001 1.62502 5.57501 1.85002L11.225 7.60002C11.45 7.82502 11.45 8.17502 11.225 8.40002L5.57501 14.15C5.47501 14.25 5.32501 14.325 5.17501 14.325Z"
-                />
-              </svg>
-            </span>
+                <button
+                  id="cancelButton"
+                  class="rounded-lg border border-primary px-5 py-2.5 text-base font-medium text-primary hover:bg-blue-light-5"
+                >
+                  Cancel
+                </button>
+                <button
+                  id="applyButton"
+                  class="rounded-lg bg-primary px-5 py-2.5 text-base font-medium text-white hover:bg-[#1B44C8]"
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="grid grid-cols-7 pb-2 pt-4 text-sm font-normal capitalize text-body-color dark:text-dark-6"
-        >
-          <span class="flex h-[38px] w-[38px] items-center justify-center">
-            Mo
-          </span>
-
-          <span class="flex h-[38px] w-[38px] items-center justify-center">
-            Tu
-          </span>
-
-          <span class="flex h-[38px] w-[38px] items-center justify-center">
-            We
-          </span>
-
-          <span class="flex h-[38px] w-[38px] items-center justify-center">
-            Th
-          </span>
-
-          <span class="flex h-[38px] w-[38px] items-center justify-center">
-            Fr
-          </span>
-
-          <span class="flex h-[38px] w-[38px] items-center justify-center">
-            Sa
-          </span>
-
-          <span class="flex h-[38px] w-[38px] items-center justify-center">
-            Su
-          </span>
-        </div>
-
-        <div id="days-container" class="grid grid-cols-7 text-sm font-medium text-dark dark:text-white"></div>
-
-        <div
-          class="flex items-center justify-center space-x-3 pt-4 sm:space-x-4"
-        >
-          <button
-            id="startDate"
-            class="h-[37px] rounded border border-stroke bg-transparent px-5 text-sm font-medium text-body-color hover:border-primary focus:border-primary dark:border-dark-3 dark:text-dark-6"
-          >
-            
-          </button>
-          <button
-            id="endDate"
-            class="h-[37px] rounded border border-stroke bg-transparent px-5 text-sm font-medium text-body-color hover:border-primary focus:border-primary dark:border-dark-3 dark:text-dark-6"
-          >
-            
-          </button>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- ====== Date range picker Section End -->
+

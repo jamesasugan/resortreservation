@@ -1,12 +1,14 @@
-
-
-  const datepicker = document.getElementById('datepicker');
-  const datepickerContainer = document.getElementById('datepicker-container');
-  const daysContainer = document.getElementById('days-container');
-  const currentMonthElement = document.getElementById('currentMonth');
-  const prevMonthButton = document.getElementById('prevMonth');
-  const nextMonthButton = document.getElementById('nextMonth');
-  const toggleDatepicker = document.getElementById('toggleDatepicker');
+const datepicker = document.getElementById("datepicker");
+  const datepickerContainer = document.getElementById(
+    "datepicker-container",
+  );
+  const daysContainer = document.getElementById("days-container");
+  const currentMonthElement = document.getElementById("currentMonth");
+  const prevMonthButton = document.getElementById("prevMonth");
+  const nextMonthButton = document.getElementById("nextMonth");
+  const cancelButton = document.getElementById("cancelButton");
+  const applyButton = document.getElementById("applyButton");
+  const toggleDatepicker = document.getElementById("toggleDatepicker");
 
   let currentDate = new Date();
   let selectedStartDate = null;
@@ -17,9 +19,12 @@
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
 
-    currentMonthElement.textContent = currentDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    currentMonthElement.textContent = currentDate.toLocaleDateString(
+      "en-US",
+      { month: "long", year: "numeric" },
+    );
 
-    daysContainer.innerHTML = '';
+    daysContainer.innerHTML = "";
     const firstDayOfMonth = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
 
@@ -29,28 +34,36 @@
 
     for (let i = 1; i <= daysInMonth; i++) {
       const day = new Date(year, month, i);
-      const dayString = day.toLocaleDateString('en-US');
+      const dayString = day.toLocaleDateString("en-US");
 
-      let className = "flex h-[46px] w-[46px] items-center justify-center rounded-full hover:bg-gray-2 dark:hover:bg-dark mb-2";
+      let className =
+        "flex items-center justify-center cursor-pointer w-[46px] h-[46px] rounded-full text-dark-3 hover:bg-primary hover:text-white";
 
       // Highlight start and end dates
       if (selectedStartDate && dayString === selectedStartDate) {
-        className += " bg-primary text-white dark:text-white rounded-r-none";
+        className +=
+          " bg-primary text-white rounded-r-none";
       }
       if (selectedEndDate && dayString === selectedEndDate) {
-        className += " bg-primary text-white dark:text-white rounded-l-none";
+        className +=
+          " bg-primary text-white rounded-l-none";
       }
 
       // Highlight dates between start and end
-      if (selectedStartDate && selectedEndDate && new Date(day) > new Date(selectedStartDate) && new Date(day) < new Date(selectedEndDate)) {
-        className += " bg-gray-2 dark:bg-dark rounded-none";  // Add your custom class for the range
+      if (
+        selectedStartDate &&
+        selectedEndDate &&
+        new Date(day) > new Date(selectedStartDate) &&
+        new Date(day) < new Date(selectedEndDate)
+      ) {
+        className += " bg-gray-300 text-black rounded-none"; // Add your custom class for the range
       }
 
       daysContainer.innerHTML += `<div class="${className}" data-date="${dayString}">${i}</div>`;
     }
 
-    document.querySelectorAll('#days-container div').forEach(day => {
-      day.addEventListener('click', function (event) {
+    document.querySelectorAll("#days-container div").forEach((day) => {
+      day.addEventListener("click", function (event) {
         event.stopPropagation(); // Prevent event from bubbling up to document
 
         const selectedDay = this.dataset.date;
@@ -75,51 +88,59 @@
 
   // Function to update the datepicker input
   function updateInput() {
-    const startDateButton = document.getElementById('startDate');
-    const endDateButton = document.getElementById('endDate');
-
     if (selectedStartDate && selectedEndDate) {
       datepicker.value = `${selectedStartDate} - ${selectedEndDate}`;
-      startDateButton.textContent = selectedStartDate;
-      endDateButton.textContent = selectedEndDate;
     } else if (selectedStartDate) {
       datepicker.value = selectedStartDate;
-      startDateButton.textContent = selectedStartDate;
-      endDateButton.textContent = '';
     } else {
-      datepicker.value = '';
-      startDateButton.textContent = 'Select Start Date';
-      endDateButton.textContent = 'Select End Date';
+      datepicker.value = "";
     }
   }
 
   // Toggle datepicker visibility
-  datepicker.addEventListener('click', function () {
-      datepickerContainer.classList.toggle('hidden');
-      renderCalendar();
-    });
+  datepicker.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent click from bubbling up to document
+    datepickerContainer.classList.toggle("hidden");
+    renderCalendar();
+  });
 
-    toggleDatepicker.addEventListener('click', function () {
-      datepickerContainer.classList.toggle('hidden');
-      renderCalendar();
-    });
+  toggleDatepicker.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent click from bubbling up to document
+    datepickerContainer.classList.toggle("hidden");
+    renderCalendar();
+  });
 
   // Navigate months
-  prevMonthButton.addEventListener('click', function () {
+  prevMonthButton.addEventListener("click", function () {
     currentDate.setMonth(currentDate.getMonth() - 1);
     renderCalendar();
   });
 
-  nextMonthButton.addEventListener('click', function () {
+  nextMonthButton.addEventListener("click", function () {
     currentDate.setMonth(currentDate.getMonth() + 1);
     renderCalendar();
   });
 
+  // Cancel selection and close calendar
+  cancelButton.addEventListener("click", function () {
+    selectedStartDate = null;
+    selectedEndDate = null;
+    updateInput();
+    datepickerContainer.classList.add("hidden");
+  });
 
-  // Close datepicker when clicking outside
-    document.addEventListener('click', function (event) {
-      if (!datepicker.contains(event.target) && !datepickerContainer.contains(event.target)) {
-        datepickerContainer.classList.add('hidden');
-      }
-    });
+  // Apply selection and close calendar
+  applyButton.addEventListener("click", function () {
+    updateInput();
+    datepickerContainer.classList.add("hidden");
+  });
 
+  // Close calendar when clicking outside of it
+  document.addEventListener("click", function (event) {
+    if (
+      !datepicker.contains(event.target) &&
+      !datepickerContainer.contains(event.target)
+    ) {
+      datepickerContainer.classList.add("hidden");
+    }
+  });
